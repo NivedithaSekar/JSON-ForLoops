@@ -13,6 +13,7 @@ var forloop = function(data,properties){
         }
     }
 }
+console.log("Normal For Loop");
 forloop(resume,Object.keys(resume));
 console.log("*******************************************************");
 
@@ -32,6 +33,7 @@ var forin = function(data){
         }
     }
 }
+console.log("For..in Loop");
 forin(resume);
 console.log("*******************************************************");
 
@@ -49,6 +51,7 @@ var forof = function(resume){
         }
     }
 }
+console.log("For..of Loop");
 forof(resume);
 console.log("*******************************************************");
 //foreach
@@ -64,4 +67,5 @@ var foreach = function(resume){
         
     });
 }
+console.log("For Each Loop");
 foreach(resume);
