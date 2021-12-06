@@ -1,5 +1,4 @@
-import resume from "/Scripts/resume.js" ;
-
+import resume from "../Scripts/resume.js"; ;
 
 //for loop - properties/index value is considered
 var forloop = function(data,properties){
