@@ -1,0 +1,24 @@
+Both for...in and for...of statements iterate over something. The main difference between them is in what they iterate over
+FOR:
+    Gives access to the index of array elements
+FOR..IN:
+    The for...in statement iterates over the enumerable properties of an object. 
+          enumerable property - properties which are created by simple assignment or property initializer are enumerable by default
+          non-enumerable property -  Properties that are created using the defineProperty() method have enumerable flag set to false usually. this makes the property invisible while printing
+    eg:
+    var descriptor = Object.getOwnPropertyDescriptor({ bar: 1 }, 'bar');
+    console.log(descriptor.enumerable); // true
+
+    var descriptor = Object.getOwnPropertyDescriptor(Object.prototype, 'constructor');
+    console.log(descriptor.enumerable); // false
+
+FOR..OF:
+    The for...of statement iterates over values that the iterable object defines to be iterated over.
+        iterable object - Iterable objects are a generalization of arrays.That’s a concept that allows us to make any object useable in a for..of loop
+        But there are other built-in objects as well.If an object isn’t technically an array, but represents a collection (list, set) of something, then for..of is a great syntax to loop over it
+Refer - https://javascript.info/iterable
+
+FOR EACH:
+    Gives access to the array element itself. But can also access index elements
+
+https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript.html
